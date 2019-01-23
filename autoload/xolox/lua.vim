@@ -469,11 +469,11 @@ function! xolox#lua#completedynamic(type) " {{{1
         " are available, which is kind of annoying. But I don't know of an
         " alternative to :silent that can be used inside of <expr>
         " mappings?!
-        if xolox#misc#option#get('lua_complete_omni', 0)
-          return a:type . "\<C-x>\<C-o>"
-        else
-          return a:type . "\<C-x>\<C-u>"
-        endif
+        "if xolox#misc#option#get('lua_complete_omni', 0)
+          "return a:type . "\<C-x>\<C-o>"
+        "else
+          "return a:type . "\<C-x>\<C-u>"
+        "endif
       endif
     endif
   endif
